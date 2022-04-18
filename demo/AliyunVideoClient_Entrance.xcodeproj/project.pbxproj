@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		136CA218237E37B500312843 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 136CA217237E37B500312843 /* AppDelegate.m */; };
+		136CA223237E37B600312843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 136CA222237E37B600312843 /* Assets.xcassets */; };
+		136CA229237E37B600312843 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 136CA228237E37B600312843 /* main.m */; };
+		729A6447280918A4004FE29F /* UITableViewCell+GCFixiOS14.m in Sources */ = {isa = PBXBuildFile; fileRef = 729A6446280918A4004FE29F /* UITableViewCell+GCFixiOS14.m */; };
+		78BA9357A2197D6DE704D03C /* libPods-AliyunVideoClient_Entrance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1048B555A763060E1A140F34 /* libPods-AliyunVideoClient_Entrance.a */; };
+		D2AACFA323827D7F000A4156 /* AlivcHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AACF9923827D7F000A4156 /* AlivcHomeViewController.m */; };
+		D2AACFA423827D7F000A4156 /* AVC_ET_ModuleItemCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AACF9C23827D7F000A4156 /* AVC_ET_ModuleItemCCell.m */; };
+		D2AACFA523827D7F000A4156 /* AVC_ET_ModuleItemCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2AACF9D23827D7F000A4156 /* AVC_ET_ModuleItemCCell.xib */; };
+		D2AACFA623827D7F000A4156 /* AVC_ET_ModuleDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AACFA023827D7F000A4156 /* AVC_ET_ModuleDefine.m */; };
+		D2AACFAD2382801B000A4156 /* ELCVFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AACFAC2382801B000A4156 /* ELCVFlowLayout.m */; };
+		D2AACFB0238280ED000A4156 /* AlivcAppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AACFAE238280ED000A4156 /* AlivcAppInfoViewController.m */; };
+		D2AACFBA238289F3000A4156 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2AACFB2238289F2000A4156 /* Localizable.strings */; };
+		D2AACFBB238289F3000A4156 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2AACFB4238289F2000A4156 /* InfoPlist.strings */; };
+		D2AACFBC238289F3000A4156 /* readMe_Resources.txt in Resources */ = {isa = PBXBuildFile; fileRef = D2AACFB7238289F2000A4156 /* readMe_Resources.txt */; };
+		D2AACFC5238291FE000A4156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AACFC3238291FE000A4156 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1048B555A763060E1A140F34 /* libPods-AliyunVideoClient_Entrance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AliyunVideoClient_Entrance.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		136CA213237E37B500312843 /* AliyunVideoClient_Entrance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliyunVideoClient_Entrance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		136CA216237E37B500312843 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		136CA217237E37B500312843 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		136CA222237E37B600312843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		136CA228237E37B600312843 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4625E1A15E4CFBBBB228269B /* Pods-AliyunVideoClient_Entrance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliyunVideoClient_Entrance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AliyunVideoClient_Entrance/Pods-AliyunVideoClient_Entrance.debug.xcconfig"; sourceTree = "<group>"; };
+		71131A05EA52C6CD8D47BCE9 /* Pods-AliyunVideoClient_Entrance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliyunVideoClient_Entrance.release.xcconfig"; path = "Pods/Target Support Files/Pods-AliyunVideoClient_Entrance/Pods-AliyunVideoClient_Entrance.release.xcconfig"; sourceTree = "<group>"; };
+		729A64452809189F004FE29F /* UITableViewCell+GCFixiOS14.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+GCFixiOS14.h"; sourceTree = "<group>"; };
+		729A6446280918A4004FE29F /* UITableViewCell+GCFixiOS14.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+GCFixiOS14.m"; sourceTree = "<group>"; };
+		D2AACF9823827D7F000A4156 /* AlivcHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlivcHomeViewController.h; sourceTree = "<group>"; };
+		D2AACF9923827D7F000A4156 /* AlivcHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlivcHomeViewController.m; sourceTree = "<group>"; };
+		D2AACF9B23827D7F000A4156 /* AVC_ET_ModuleItemCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVC_ET_ModuleItemCCell.h; sourceTree = "<group>"; };
+		D2AACF9C23827D7F000A4156 /* AVC_ET_ModuleItemCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVC_ET_ModuleItemCCell.m; sourceTree = "<group>"; };
+		D2AACF9D23827D7F000A4156 /* AVC_ET_ModuleItemCCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVC_ET_ModuleItemCCell.xib; sourceTree = "<group>"; };
+		D2AACF9F23827D7F000A4156 /* AVC_ET_ModuleDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVC_ET_ModuleDefine.h; sourceTree = "<group>"; };
+		D2AACFA023827D7F000A4156 /* AVC_ET_ModuleDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVC_ET_ModuleDefine.m; sourceTree = "<group>"; };
+		D2AACFAB2382801A000A4156 /* ELCVFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCVFlowLayout.h; sourceTree = "<group>"; };
+		D2AACFAC2382801B000A4156 /* ELCVFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCVFlowLayout.m; sourceTree = "<group>"; };
+		D2AACFAE238280ED000A4156 /* AlivcAppInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlivcAppInfoViewController.m; sourceTree = "<group>"; };
+		D2AACFAF238280ED000A4156 /* AlivcAppInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlivcAppInfoViewController.h; sourceTree = "<group>"; };
+		D2AACFB3238289F2000A4156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D2AACFB5238289F2000A4156 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D2AACFB6238289F2000A4156 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D2AACFB7238289F2000A4156 /* readMe_Resources.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readMe_Resources.txt; sourceTree = "<group>"; };
+		D2AACFB8238289F2000A4156 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D2AACFB9238289F2000A4156 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D2AACFC4238291FE000A4156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		136CA210237E37B500312843 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78BA9357A2197D6DE704D03C /* libPods-AliyunVideoClient_Entrance.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		136CA20A237E37B500312843 = {
+			isa = PBXGroup;
+			children = (
+				136CA215237E37B500312843 /* AliyunVideoClient_Entrance */,
+				136CA214237E37B500312843 /* Products */,
+				2F53D17C97A900D434CB78DD /* Pods */,
+				2AD120A0730FE9E66C8DD83D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		136CA214237E37B500312843 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				136CA213237E37B500312843 /* AliyunVideoClient_Entrance.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		136CA215237E37B500312843 /* AliyunVideoClient_Entrance */ = {
+			isa = PBXGroup;
+			children = (
+				729A64452809189F004FE29F /* UITableViewCell+GCFixiOS14.h */,
+				729A6446280918A4004FE29F /* UITableViewCell+GCFixiOS14.m */,
+				D2AACFB1238289F2000A4156 /* Resources */,
+				D2AACF9623827D2D000A4156 /* Home */,
+				136CA216237E37B500312843 /* AppDelegate.h */,
+				136CA217237E37B500312843 /* AppDelegate.m */,
+				D2AACFC3238291FE000A4156 /* LaunchScreen.storyboard */,
+				136CA222237E37B600312843 /* Assets.xcassets */,
+				136CA228237E37B600312843 /* main.m */,
+			);
+			path = AliyunVideoClient_Entrance;
+			sourceTree = "<group>";
+		};
+		2AD120A0730FE9E66C8DD83D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1048B555A763060E1A140F34 /* libPods-AliyunVideoClient_Entrance.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F53D17C97A900D434CB78DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4625E1A15E4CFBBBB228269B /* Pods-AliyunVideoClient_Entrance.debug.xcconfig */,
+				71131A05EA52C6CD8D47BCE9 /* Pods-AliyunVideoClient_Entrance.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2AACF9623827D2D000A4156 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D2AACF9723827D7F000A4156 /* Controllers */,
+				D2AACF9E23827D7F000A4156 /* Models */,
+				D2AACF9A23827D7F000A4156 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D2AACF9723827D7F000A4156 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2AACFAF238280ED000A4156 /* AlivcAppInfoViewController.h */,
+				D2AACFAE238280ED000A4156 /* AlivcAppInfoViewController.m */,
+				D2AACF9823827D7F000A4156 /* AlivcHomeViewController.h */,
+				D2AACF9923827D7F000A4156 /* AlivcHomeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D2AACF9A23827D7F000A4156 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2AACFAB2382801A000A4156 /* ELCVFlowLayout.h */,
+				D2AACFAC2382801B000A4156 /* ELCVFlowLayout.m */,
+				D2AACF9B23827D7F000A4156 /* AVC_ET_ModuleItemCCell.h */,
+				D2AACF9C23827D7F000A4156 /* AVC_ET_ModuleItemCCell.m */,
+				D2AACF9D23827D7F000A4156 /* AVC_ET_ModuleItemCCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2AACF9E23827D7F000A4156 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2AACF9F23827D7F000A4156 /* AVC_ET_ModuleDefine.h */,
+				D2AACFA023827D7F000A4156 /* AVC_ET_ModuleDefine.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2AACFB1238289F2000A4156 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2AACFB2238289F2000A4156 /* Localizable.strings */,
+				D2AACFB4238289F2000A4156 /* InfoPlist.strings */,
+				D2AACFB7238289F2000A4156 /* readMe_Resources.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		136CA212237E37B500312843 /* AliyunVideoClient_Entrance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 136CA22C237E37B600312843 /* Build configuration list for PBXNativeTarget "AliyunVideoClient_Entrance" */;
+			buildPhases = (
+				91A7B157A1BD6217C1290CBF /* [CP] Check Pods Manifest.lock */,
+				136CA20F237E37B500312843 /* Sources */,
+				136CA210237E37B500312843 /* Frameworks */,
+				136CA211237E37B500312843 /* Resources */,
+				5D355D1EBFF18F274DBB58CE /* [CP] Embed Pods Frameworks */,
+				49FE4E16B63CC81BB702A714 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AliyunVideoClient_Entrance;
+			productName = AliyunVideoClient_Entrance;
+			productReference = 136CA213237E37B500312843 /* AliyunVideoClient_Entrance.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		136CA20B237E37B500312843 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Aliyun;
+				TargetAttributes = {
+					136CA212237E37B500312843 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 136CA20E237E37B500312843 /* Build configuration list for PBXProject "AliyunVideoClient_Entrance" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 136CA20A237E37B500312843;
+			productRefGroup = 136CA214237E37B500312843 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				136CA212237E37B500312843 /* AliyunVideoClient_Entrance */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		136CA211237E37B500312843 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2AACFBA238289F3000A4156 /* Localizable.strings in Resources */,
+				D2AACFBB238289F3000A4156 /* InfoPlist.strings in Resources */,
+				D2AACFBC238289F3000A4156 /* readMe_Resources.txt in Resources */,
+				D2AACFC5238291FE000A4156 /* LaunchScreen.storyboard in Resources */,
+				D2AACFA523827D7F000A4156 /* AVC_ET_ModuleItemCCell.xib in Resources */,
+				136CA223237E37B600312843 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49FE4E16B63CC81BB702A714 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AliyunVideoClient_Entrance/Pods-AliyunVideoClient_Entrance-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AliyunVideoClient_Entrance/Pods-AliyunVideoClient_Entrance-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AliyunVideoClient_Entrance/Pods-AliyunVideoClient_Entrance-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D355D1EBFF18F274DBB58CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AliyunVideoClient_Entrance/Pods-AliyunVideoClient_Entrance-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AliyunVideoClient_Entrance/Pods-AliyunVideoClient_Entrance-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AliyunVideoClient_Entrance/Pods-AliyunVideoClient_Entrance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91A7B157A1BD6217C1290CBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AliyunVideoClient_Entrance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		136CA20F237E37B500312843 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136CA218237E37B500312843 /* AppDelegate.m in Sources */,
+				D2AACFB0238280ED000A4156 /* AlivcAppInfoViewController.m in Sources */,
+				136CA229237E37B600312843 /* main.m in Sources */,
+				D2AACFAD2382801B000A4156 /* ELCVFlowLayout.m in Sources */,
+				729A6447280918A4004FE29F /* UITableViewCell+GCFixiOS14.m in Sources */,
+				D2AACFA423827D7F000A4156 /* AVC_ET_ModuleItemCCell.m in Sources */,
+				D2AACFA623827D7F000A4156 /* AVC_ET_ModuleDefine.m in Sources */,
+				D2AACFA323827D7F000A4156 /* AlivcHomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2AACFB2238289F2000A4156 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2AACFB3238289F2000A4156 /* Base */,
+				D2AACFB6238289F2000A4156 /* en */,
+				D2AACFB9238289F2000A4156 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D2AACFB4238289F2000A4156 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2AACFB5238289F2000A4156 /* en */,
+				D2AACFB8238289F2000A4156 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D2AACFC3238291FE000A4156 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2AACFC4238291FE000A4156 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		136CA22A237E37B600312843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		136CA22B237E37B600312843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		136CA22D237E37B600312843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4625E1A15E4CFBBBB228269B /* Pods-AliyunVideoClient_Entrance.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_OPTIMIZATION_PROFILE_FILE = "AliyunVideoClient_Entrance/ProjectConfig/AliyunVideoClient_Entrance-Info.plist";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = A9ZY4654BA;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/AliyunVideoClient_Entrance/ProjectConfig/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.4.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greatchef.mingchuDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		136CA22E237E37B600312843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71131A05EA52C6CD8D47BCE9 /* Pods-AliyunVideoClient_Entrance.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_OPTIMIZATION_PROFILE_FILE = "AliyunVideoClient_Entrance/ProjectConfig/AliyunVideoClient_Entrance-Info.plist";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A9ZY4654BA;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/AliyunVideoClient_Entrance/ProjectConfig/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.4.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greatchef.mingchuDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		136CA20E237E37B500312843 /* Build configuration list for PBXProject "AliyunVideoClient_Entrance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				136CA22A237E37B600312843 /* Debug */,
+				136CA22B237E37B600312843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		136CA22C237E37B600312843 /* Build configuration list for PBXNativeTarget "AliyunVideoClient_Entrance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				136CA22D237E37B600312843 /* Debug */,
+				136CA22E237E37B600312843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 136CA20B237E37B500312843 /* Project object */;
+}

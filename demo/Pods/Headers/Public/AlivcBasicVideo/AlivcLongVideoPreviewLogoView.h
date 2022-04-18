@@ -1,0 +1,1 @@
+../../../../AlivcBasicVideo/AlivcBasicVideo/Classes/AlivcBasicVideo/LongBasicView/AlivcLongVideoPreviewLogoView.h

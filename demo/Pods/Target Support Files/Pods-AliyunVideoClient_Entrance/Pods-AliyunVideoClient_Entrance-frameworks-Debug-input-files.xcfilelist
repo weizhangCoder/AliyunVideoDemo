@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-AliyunVideoClient_Entrance/Pods-AliyunVideoClient_Entrance-frameworks.sh
+${PODS_ROOT}/AliPlayerSDK_iOS/AliyunPlayer.framework
+${PODS_ROOT}/AliPlayerSDK_iOS/alivcffmpeg.framework
+${PODS_ROOT}/AliPlayerSDK_iOS/AliyunMediaDownloader.framework
+${PODS_ROOT}/AliPlayerSDK_iOS_ARTC/artcSource.framework
+${PODS_ROOT}/RtsSDK/RtsSDK.framework

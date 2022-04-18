@@ -1,0 +1,31 @@
+#use_frameworks!
+install! 'cocoapods', :deterministic_uuids => false
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+
+#source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://github.com/aliyun/aliyun-specs.git'
+
+platform :ios, '9.0'
+
+target 'AliyunVideoClient_Entrance' do
+  
+  #友盟crash收集
+  pod 'UMCCommon','2.0.0'
+  pod 'UMCAnalytics','6.0.1'
+  
+pod 'AlivcCommon', :path => 'AlivcCommon/' 
+pod 'AlivcBasicVideo', :path => 'AlivcBasicVideo/' 
+pod 'AlivcPlayVideo', :path => 'AlivcPlayVideo/'
+#性能检测库
+pod 'LookinServer'
+
+
+  pod 'MRDLNA',:git => 'https://github.com/MQL9011/MRDLNA.git'
+#  pod 'AliPlayerSDK_iOS',:git => 'https://github.com/aliyunvideo/AliPlayerSDK',:tag=>'5.4.2.0'
+#  pod 'AliPlayerSDK_iOS_ARTC',:git => 'https://github.com/aliyunvideo/AliPlayerSDK',:tag=>'5.4.2.0'
+
+
+
+
+
+end
