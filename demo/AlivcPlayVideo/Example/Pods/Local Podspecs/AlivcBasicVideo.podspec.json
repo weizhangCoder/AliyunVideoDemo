@@ -1,0 +1,56 @@
+{
+  "name": "AlivcBasicVideo",
+  "version": "0.1.0",
+  "summary": "A short description of AlivcBasicVideo.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wb-ll501135/AlivcBasicVideo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wb-ll501135": "wb-ll501135@alibaba-inc.com"
+  },
+  "source": {
+    "git": "https://github.com/wb-ll501135/AlivcBasicVideo.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "static_framework": true,
+  "source_files": "AlivcBasicVideo/Classes/**/*.{h,m,mm}",
+  "prefix_header_contents": [
+    "#import \"AlivcMacro.h\"",
+    "#import \"AlivcImage.h\""
+  ],
+  "resource_bundles": {
+    "AlivcBasicVideo": [
+      "AlivcBasicVideo/Assets/AlivcImage_LongVideo/*.png",
+      "AlivcBasicVideo/Assets/AlivcImage_Player/*.png",
+      "AlivcBasicVideo/Assets/AlivcImage_TimeShift/*.png",
+      "AlivcBasicVideo/Assets/*.dat",
+      "AlivcBasicVideo/Classes/**/*.xib"
+    ]
+  },
+  "dependencies": {
+    "AlivcCommon": [
+
+    ],
+    "MJRefresh": [
+      "~> 3.1.15.7"
+    ],
+    "MRDLNA": [
+
+    ],
+    "AliPlayerSDK_iOS": [
+      "5.4.4.1"
+    ],
+    "AliPlayerSDK_iOS_ARTC": [
+      "5.4.4.1"
+    ],
+    "RtsSDK": [
+      "1.9.0"
+    ]
+  }
+}

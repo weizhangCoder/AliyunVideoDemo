@@ -1,0 +1,35 @@
+{
+  "name": "AlivcPlayVideo",
+  "version": "0.1.0",
+  "summary": "A short description of AlivcPlayVideo.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wb-ll501135/AlivcPlayVideo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wb-ll501135": "wb-ll501135@alibaba-inc.com"
+  },
+  "source": {
+    "git": "https://github.com/wb-ll501135/AlivcPlayVideo.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "static_framework": true,
+  "source_files": "AlivcPlayVideo/Classes/**/*.{h,m,mm}",
+  "prefix_header_contents": [
+    "#import \"AlivcMacro.h\"",
+    "#import \"AlivcImage.h\""
+  ],
+  "dependencies": {
+    "AlivcBasicVideo": [
+
+    ],
+    "IQKeyboardManager": [
+
+    ]
+  }
+}
