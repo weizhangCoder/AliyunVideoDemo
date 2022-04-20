@@ -941,7 +941,7 @@
 		46EB2E000081B0 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00002E90 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		46EB2E00008210 /* ZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00008200 /* ZipArchive-dummy.m */; };
 		46EB2E00008320 /* Pods-AliyunVideoClient_Entrance-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00008310 /* Pods-AliyunVideoClient_Entrance-dummy.m */; };
-		7283806F28096388009AAEF2 /* encryptedApp.dat in Resources */ = {isa = PBXBuildFile; fileRef = 7283806E28096388009AAEF2 /* encryptedApp.dat */; };
+		7248EDDF280FC20300CA001D /* encryptedApp.dat in Resources */ = {isa = PBXBuildFile; fileRef = 7248EDDE280FC20300CA001D /* encryptedApp.dat */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2163,7 +2163,7 @@
 		65F7B1DD6F2F7E4FD631E9C8914962D9 /* Pods-AliyunVideoClient_Entrance */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-AliyunVideoClient_Entrance"; path = "libPods-AliyunVideoClient_Entrance.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = CocoaAsyncSocket; path = libCocoaAsyncSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD1E5D6D66DA1A6E590A3A813B467E6 /* AlivcCommon */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = AlivcCommon; path = libAlivcCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7283806E28096388009AAEF2 /* encryptedApp.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = encryptedApp.dat; sourceTree = "<group>"; };
+		7248EDDE280FC20300CA001D /* encryptedApp.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = encryptedApp.dat; sourceTree = "<group>"; };
 		7EB5AFA18F97DB9407BC144E7FEA56D0 /* AlivcBasicVideo */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = AlivcBasicVideo; path = libAlivcBasicVideo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = MBProgressHUD; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		98527D7196957AAB07B79E2E2AFDE23E /* IQKeyboardManager */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = IQKeyboardManager; path = libIQKeyboardManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3644,7 +3644,7 @@
 		46EB2E00002FA0 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				7283806E28096388009AAEF2 /* encryptedApp.dat */,
+				7248EDDE280FC20300CA001D /* encryptedApp.dat */,
 				46EB2E00002FB0 /* AlivcImage_LongVideo */,
 				46EB2E00003380 /* AlivcImage_Player */,
 				46EB2E00003B70 /* AlivcImage_TimeShift */,
@@ -5165,7 +5165,7 @@
 				46EB2E00004500 /* vip_play@2x.png in Resources */,
 				46EB2E00004510 /* vip_play@3x.png in Resources */,
 				46EB2E00004520 /* vip_stop@2x.png in Resources */,
-				7283806F28096388009AAEF2 /* encryptedApp.dat in Resources */,
+				7248EDDF280FC20300CA001D /* encryptedApp.dat in Resources */,
 				46EB2E00004530 /* vip_stop@3x.png in Resources */,
 				46EB2E000044C0 /* VIPbg@2x.png in Resources */,
 				46EB2E000044D0 /* VIPbg@3x.png in Resources */,

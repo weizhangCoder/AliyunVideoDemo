@@ -41,7 +41,7 @@
     dispatch_once(&onceToken, ^{
         manager = [[AlivcLongVideoDownLoadManager alloc]init];
         manager.queue = dispatch_queue_create("DownLoad", DISPATCH_QUEUE_SERIAL);
-        manager.region = @"cn-shanghai";
+        manager.region = @"cn-beijing";
         manager.downloadCount = 0;
         manager.maxDownloadCount = [[AlivcLongVideoCommonFunc getUDSetWithIndex:0] integerValue];
         manager.allSourcesArray = [NSMutableArray array];
@@ -589,6 +589,7 @@
 
 -(void)onProcessingProgress:(AliMediaDownloader *)downloader percentage:(int)percent {
     NSLog(@"onProcessingProgress:%d", percent);
+    
 }
 
 -(void)onCompletion:(AliMediaDownloader *)downloader {

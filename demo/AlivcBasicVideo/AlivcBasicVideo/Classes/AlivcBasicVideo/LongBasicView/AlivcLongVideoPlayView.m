@@ -1015,7 +1015,7 @@ static const CGFloat AlilyunViewLoadingViewHeight = 120;
         
         [self.loadingView show];
         
-        self.stsSource = [[AVPVidStsSource alloc]initWithVid:vid accessKeyId:accessKeyId accessKeySecret:accessKeySecret securityToken:securityToken region:@"cn-shanghai"];
+        self.stsSource = [[AVPVidStsSource alloc]initWithVid:vid accessKeyId:accessKeyId accessKeySecret:accessKeySecret securityToken:securityToken region:@"cn-beijing"];
         BOOL isVip = [[AlivcLongVideoCommonFunc getUDSetWithIndex:5]boolValue];
         if (isVip == NO && self.currentLongVideoModel.isVip && [self.currentLongVideoModel.isVip isEqualToString:@"true"]) {
             VidPlayerConfigGenerator* vp = [[VidPlayerConfigGenerator alloc] init];

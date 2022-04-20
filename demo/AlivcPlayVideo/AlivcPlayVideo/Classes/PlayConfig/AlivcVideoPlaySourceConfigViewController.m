@@ -189,7 +189,7 @@
             break;
         case 1: {
             [AlivcPlayVideoRequestManager getWithParameters:nil urlType:AVPUrlTypePlayerVideoSts success:^(AVPDemoResponseModel *responseObject) {
-                self.tempVidStsSource = [[AVPVidStsSource alloc] initWithVid:responseObject.data.videoId accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-shanghai"];
+                self.tempVidStsSource = [[AVPVidStsSource alloc] initWithVid:responseObject.data.videoId accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-beijing"];
                 [self.tableView reloadData];
                 [AVPTool hudWithText:[@"恢复成功" localString] view:self.view];
             } failure:^(NSString *errorMsg) {
@@ -209,7 +209,7 @@
             break;
         case 3: {
             [AlivcPlayVideoRequestManager getWithParameters:nil urlType:AVPUrlTypePlayerVideoPlayAuth success:^(AVPDemoResponseModel *responseObject) {
-                self.tempVidAuthSource = [[AVPVidAuthSource alloc]initWithVid:responseObject.data.videoMeta.videoId playAuth:responseObject.data.playAuth region:@"cn-shanghai"];
+                self.tempVidAuthSource = [[AVPVidAuthSource alloc]initWithVid:responseObject.data.videoMeta.videoId playAuth:responseObject.data.playAuth region:@"cn-beijing"];
                 [self.tableView reloadData];
                 [AVPTool hudWithText:[@"恢复成功" localString] view:self.view];
             } failure:^(NSString *errorMsg) {
@@ -219,7 +219,7 @@
             break;
         case 4: {
             [AlivcPlayVideoRequestManager getWithParameters:nil urlType:AVPUrlTypePlayerVideoLiveSts success:^(AVPDemoResponseModel *responseObject) {
-                self.templiveStsSource = [[AVPLiveStsSource alloc] initWithUrl:@"" accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-shanghai" domain:@"" app:@"" stream:@"" encryptionType:ENCRYPTION_TYPE_NONE];
+                self.templiveStsSource = [[AVPLiveStsSource alloc] initWithUrl:@"" accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-beijing" domain:@"" app:@"" stream:@"" encryptionType:ENCRYPTION_TYPE_NONE];
                 self.playerConfig.liveStsExpireTime = [AVPDemoServerManager getExpirTime:responseObject.data.expiration];
                 [self.tableView reloadData];
                 [AVPTool hudWithText:[@"恢复成功" localString] view:self.view];
@@ -246,7 +246,7 @@
             }
             
             [AlivcPlayVideoRequestManager getWithParameters:@{@"videoId":source.vid} urlType:AVPUrlTypePlayerVideoSts success:^(AVPDemoResponseModel *responseObject) {
-                self.tempVidStsSource = [[AVPVidStsSource alloc] initWithVid:responseObject.data.videoId accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-shanghai"];
+                self.tempVidStsSource = [[AVPVidStsSource alloc] initWithVid:responseObject.data.videoId accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-beijing"];
                 [self.tableView reloadData];
                 [AVPTool hudWithText:[@"刷新成功" localString] view:self.view];
             } failure:^(NSString *errorMsg) {
@@ -280,7 +280,7 @@
             }
             
             [AlivcPlayVideoRequestManager getWithParameters:@{@"videoId":source.vid} urlType:AVPUrlTypePlayerVideoPlayAuth success:^(AVPDemoResponseModel *responseObject) {
-                self.tempVidAuthSource = [[AVPVidAuthSource alloc]initWithVid:responseObject.data.videoMeta.videoId playAuth:responseObject.data.playAuth region:@"cn-shanghai"];
+                self.tempVidAuthSource = [[AVPVidAuthSource alloc]initWithVid:responseObject.data.videoMeta.videoId playAuth:responseObject.data.playAuth region:@"cn-beijing"];
                 [self.tableView reloadData];
                 [AVPTool hudWithText:[@"刷新成功" localString] view:self.view];
             } failure:^(NSString *errorMsg) {
@@ -292,7 +292,7 @@
             AVPLiveStsSource *source = self.playerConfig.liveStsSource;
             if (self.templiveStsSource) { source = self.templiveStsSource; }
             [AlivcPlayVideoRequestManager getWithParameters:nil urlType:AVPUrlTypePlayerVideoLiveSts success:^(AVPDemoResponseModel *responseObject) {
-                self.templiveStsSource = [[AVPLiveStsSource alloc] initWithUrl:self.templiveStsSource.url accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-shanghai" domain:self.templiveStsSource.domain app:self.templiveStsSource.app stream:self.templiveStsSource.stream encryptionType:ENCRYPTION_TYPE_NONE];
+                self.templiveStsSource = [[AVPLiveStsSource alloc] initWithUrl:self.templiveStsSource.url accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-beijing" domain:self.templiveStsSource.domain app:self.templiveStsSource.app stream:self.templiveStsSource.stream encryptionType:ENCRYPTION_TYPE_NONE];
                 self.playerConfig.liveStsExpireTime = [AVPDemoServerManager getExpirTime:responseObject.data.expiration];
                 [self.tableView reloadData];
                 [AVPTool hudWithText:[@"刷新成功" localString] view:self.view];

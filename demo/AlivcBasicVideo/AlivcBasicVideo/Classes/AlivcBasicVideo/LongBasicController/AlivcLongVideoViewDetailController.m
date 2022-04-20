@@ -583,7 +583,7 @@
         [AVPTool loadingHudToView:self.view];
         [AlivcPlayVideoRequestManager getWithParameters:@{@"videoId":self.playerConfig.vidStsSource.vid} urlType:AVPUrlTypePlayerVideoSts success:^(AVPDemoResponseModel *responseObject) {
             [AVPTool hideLoadingHudForView:self.view];
-            AVPVidStsSource *vidStsSource = [[AVPVidStsSource alloc] initWithVid:responseObject.data.videoId accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-shanghai"];
+            AVPVidStsSource *vidStsSource = [[AVPVidStsSource alloc] initWithVid:responseObject.data.videoId accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-beijing"];
             vidStsSource.playConfig = self.playerConfig.vidStsSource.playConfig;
             self.playerConfig.vidStsSource = vidStsSource;
             self.currentSource.stsSource = self.playerConfig.vidStsSource;
@@ -596,7 +596,7 @@
         [AVPTool loadingHudToView:self.view];
         [AlivcPlayVideoRequestManager getWithParameters:@{@"videoId":self.playerConfig.vidAuthSource.vid} urlType:AVPUrlTypePlayerVideoPlayAuth success:^(AVPDemoResponseModel *responseObject) {
             [AVPTool hideLoadingHudForView:self.view];
-            AVPVidAuthSource *vidAuthSource = [[AVPVidAuthSource alloc]initWithVid:responseObject.data.videoMeta.videoId playAuth:responseObject.data.playAuth region:@"cn-shanghai"];
+            AVPVidAuthSource *vidAuthSource = [[AVPVidAuthSource alloc]initWithVid:responseObject.data.videoMeta.videoId playAuth:responseObject.data.playAuth region:@"cn-beijing"];
             vidAuthSource.playConfig = self.playerConfig.vidAuthSource.playConfig;
             self.playerConfig.vidAuthSource = vidAuthSource;
             self.currentSource.authSource = self.playerConfig.vidAuthSource;
@@ -932,7 +932,7 @@
                 [AVPTool loadingHudToView:self.view];
                 [AlivcPlayVideoRequestManager getWithParameters:@{@"videoId":self.playerConfig.vidStsSource.vid} urlType:AVPUrlTypePlayerVideoSts success:^(AVPDemoResponseModel *responseObject) {
                     [AVPTool hideLoadingHudForView:self.view];
-                    AVPVidStsSource *vidStsSource = [[AVPVidStsSource alloc] initWithVid:responseObject.data.videoId accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-shanghai"];
+                    AVPVidStsSource *vidStsSource = [[AVPVidStsSource alloc] initWithVid:responseObject.data.videoId accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-beijing"];
                     vidStsSource.playConfig = self.playerConfig.vidStsSource.playConfig;
                     self.playerConfig.vidStsSource = vidStsSource;
                     [AVPTool hudWithText:[@"刷新成功" localString] view:self.view];
@@ -991,7 +991,7 @@
                 [AVPTool loadingHudToView:self.view];
                 [AlivcPlayVideoRequestManager getWithParameters:@{@"videoId":self.playerConfig.vidAuthSource.vid} urlType:AVPUrlTypePlayerVideoPlayAuth success:^(AVPDemoResponseModel *responseObject) {
                     [AVPTool hideLoadingHudForView:self.view];
-                    AVPVidAuthSource *vidAuthSource = [[AVPVidAuthSource alloc]initWithVid:responseObject.data.videoMeta.videoId playAuth:responseObject.data.playAuth region:@"cn-shanghai"];
+                    AVPVidAuthSource *vidAuthSource = [[AVPVidAuthSource alloc]initWithVid:responseObject.data.videoMeta.videoId playAuth:responseObject.data.playAuth region:@"cn-beijing"];
                     vidAuthSource.playConfig = self.playerConfig.vidAuthSource.playConfig;
                     self.playerConfig.vidAuthSource = vidAuthSource;
                     [AVPTool hudWithText:[@"刷新成功" localString] view:self.view];

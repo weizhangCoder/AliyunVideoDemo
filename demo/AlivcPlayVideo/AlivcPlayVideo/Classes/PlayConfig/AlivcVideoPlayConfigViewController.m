@@ -42,6 +42,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    //初始化播放器组件
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+        NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"AlivcBasicVideo.bundle"];
+        NSBundle *bundle = [NSBundle bundleWithPath:path];
+        NSString *encrptyFilePath = [bundle pathForResource:@"encryptedApp" ofType:@"dat"];
+        [AliPrivateService initKey:encrptyFilePath];
+////        [AliPlayer setEnableLog:YES];
+////        [AliPlayer setLogCallbackInfo:LOG_LEVEL_DEBUG callbackBlock:nil];
+//    });
+//
+
+    
+    
     self.navigationItem.title = [@"播放设置" localString];
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [AlivcUIConfig shared].kAVCBackgroundColor;
@@ -53,17 +67,6 @@
     
     self.playerConfig.sourceType = SourceTypeAuth;
     
-    //初始化播放器组件
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"AlivcBasicVideo.bundle"];
-        NSBundle *bundle = [NSBundle bundleWithPath:path];
-        NSString *encrptyFilePath = [bundle pathForResource:@"encryptedApp" ofType:@"dat"];
-        [AliPrivateService initKey:encrptyFilePath];
-//        [AliPlayer setEnableLog:YES];
-//        [AliPlayer setLogCallbackInfo:LOG_LEVEL_DEBUG callbackBlock:nil];
-    });
-
     
     
     if (self.playerConfig.sourceType == SourceTypeAuth) {
@@ -192,7 +195,7 @@
                 [AVPTool loadingHudToView:self.view];
                 [AlivcPlayVideoRequestManager getWithParameters:nil urlType:AVPUrlTypePlayerVideoSts success:^(AVPDemoResponseModel *responseObject) {
                     [AVPTool hideLoadingHudForView:self.view];
-                    self.playerConfig.vidStsSource = [[AVPVidStsSource alloc] initWithVid:responseObject.data.videoId accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-shanghai"];
+                    self.playerConfig.vidStsSource = [[AVPVidStsSource alloc] initWithVid:responseObject.data.videoId accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-beijing"];
                     [self pushToPlayViewHasSource];
                 } failure:^(NSString *errorMsg) {
                     [AVPTool hideLoadingHudForView:self.view];
@@ -224,7 +227,7 @@
                 [AVPTool loadingHudToView:self.view];
                 [AlivcPlayVideoRequestManager getWithParameters:nil urlType:AVPUrlTypePlayerVideoPlayAuth success:^(AVPDemoResponseModel *responseObject) {
                     [AVPTool hideLoadingHudForView:self.view];
-//                    self.playerConfig.vidAuthSource = [[AVPVidAuthSource alloc]initWithVid:responseObject.data.videoMeta.videoId playAuth:responseObject.data.playAuth region:@"cn-shanghai"];
+//                    self.playerConfig.vidAuthSource = [[AVPVidAuthSource alloc]initWithVid:responseObject.data.videoMeta.videoId playAuth:responseObject.data.playAuth region:@"cn-beijing"];
                     self.playerConfig.vidAuthSource = [[AVPVidAuthSource alloc]initWithVid:responseObject.data.videoMeta.videoId playAuth:responseObject.data.playAuth region:@"cn-beijing"];
                     [self pushToPlayViewHasSource];
                 } failure:^(NSString *errorMsg) {
@@ -241,7 +244,7 @@
                 [AVPTool loadingHudToView:self.view];
                 [AlivcPlayVideoRequestManager getWithParameters:nil urlType:AVPUrlTypePlayerVideoLiveSts success:^(AVPDemoResponseModel *responseObject) {
                     [AVPTool hideLoadingHudForView:self.view];
-                    self.playerConfig.liveStsSource = [[AVPLiveStsSource alloc] initWithUrl:@"" accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-shanghai" domain:@"" app:@"" stream:@"" encryptionType:ENCRYPTION_TYPE_NONE];
+                    self.playerConfig.liveStsSource = [[AVPLiveStsSource alloc] initWithUrl:@"" accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-beijing" domain:@"" app:@"" stream:@"" encryptionType:ENCRYPTION_TYPE_NONE];
                     self.playerConfig.liveStsExpireTime = [AVPDemoServerManager getExpirTime:responseObject.data.expiration];
                     [self pushToPlayViewHasSource];
                 } failure:^(NSString *errorMsg) {

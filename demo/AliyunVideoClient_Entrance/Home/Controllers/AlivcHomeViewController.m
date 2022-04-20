@@ -125,6 +125,11 @@ static CGFloat lableDevideToTop = 44; //阿里云视频label距离顶部的距�
 //    [self setDefaultEnv];
     
     
+    NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"AlivcBasicVideo.bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:path];
+    NSString *encrptyFilePath = [bundle pathForResource:@"encryptedApp" ofType:@"dat"];
+    [AliPrivateService initKey:encrptyFilePath];
+    
     // 开启短视频log
 #if __has_include(<AliyunVideoSDKPro/AliyunVideoSDKInfo.h>)
     [AliyunVideoSDKInfo setLogLevel:kAlivcLogLevel];
@@ -576,20 +581,13 @@ static CGFloat lableDevideToTop = 44; //阿里云视频label距离顶部的距�
 
 - (void)pushAVC_ET_ModuleType_VideoPlayConfig{
     
-    AlivcVideoPlayPlayerConfig *playerConfig = [[AlivcVideoPlayPlayerConfig alloc]init];
 
-    playerConfig.sourceType = SourceTypeAuth;
 
-//    //初始化播放器组件
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"AlivcBasicVideo.bundle"];
-//        NSBundle *bundle = [NSBundle bundleWithPath:path];
-//        NSString *encrptyFilePath = [bundle pathForResource:@"encryptedApp" ofType:@"dat"];
-//        [AliPrivateService initKey:encrptyFilePath];
-////        [AliPlayer setEnableLog:YES];
-////        [AliPlayer setLogCallbackInfo:LOG_LEVEL_DEBUG callbackBlock:nil];
-//    });
+    
+    
+    
+  
+
 
     
     
@@ -599,7 +597,9 @@ static CGFloat lableDevideToTop = 44; //阿里云视频label距离顶部的距�
             NSDictionary *dataDict = resultDic[@"data"];
             NSString *videoId = dataDict[@"VideoMeta"][@"VideoId"];
             NSString *playAuth = dataDict[@"PlayAuth"];
-
+            
+            AlivcVideoPlayPlayerConfig *playerConfig = [[AlivcVideoPlayPlayerConfig alloc]init];
+            playerConfig.sourceType = SourceTypeAuth;
             playerConfig.vidAuthSource = [[AVPVidAuthSource alloc]initWithVid:videoId playAuth:playAuth region:@"cn-beijing"];
             AlivcLongVideoViewDetailController *vc = [[AlivcLongVideoViewDetailController alloc]init];
             vc.playerConfig = playerConfig;

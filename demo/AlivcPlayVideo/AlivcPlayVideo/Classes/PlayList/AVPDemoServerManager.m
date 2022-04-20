@@ -21,7 +21,7 @@ static AVPDemoServerManager *manager;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         manager = [[AVPDemoServerManager alloc]init];
-        manager.region = @"cn-shanghai";
+        manager.region = @"cn-beijing";
     });
     return manager;
 }

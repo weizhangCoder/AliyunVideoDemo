@@ -17,6 +17,21 @@
 #import <UMCommon/UMCommon.h>
 #import <UMAnalytics/MobClick.h>
 
+//#import "AlivcPlayVideoRequestManager.h"
+//#import "NSString+AlivcHelper.h"
+//#import "AVPDemoServerManager.h"
+//#import "AlivcAppServer.h"
+//#import "AlivcUIConfig.h"
+//#import "AlivcVideoPlayButtonSelectView.h"
+//#import "AVPTool.h"
+//#import "AlivcPlayVideoRequestManager.h"
+//#import "NSString+AlivcHelper.h"
+//#import "AVPDemoServerManager.h"
+//#import "AlivcAppServer.h"
+
+#ifdef OPEN_PLAYVIDEO_PRIVATECODE
+#import <AliyunPlayer/AliyunPlayer.h>
+#endif
 
 @interface AppDelegate ()
 
@@ -27,17 +42,47 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+
+    
+    
     self.window =[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     UINavigationController *nav =[[UINavigationController alloc]initWithRootViewController:[AlivcHomeViewController new]];
     [self.window setRootViewController:nav];
     [self.window makeKeyAndVisible];
     [self settingNavBar];
+
+    
+    //初始化播放器组件
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"AlivcBasicVideo.bundle"];
+        NSBundle *bundle = [NSBundle bundleWithPath:path];
+        NSString *encrptyFilePath = [bundle pathForResource:@"encryptedApp" ofType:@"dat"];
+        [AliPrivateService initKey:encrptyFilePath];
+//
+//        NSString *encrptyFilePath = [[NSBundle mainBundle] pathForResource:@"encryptedApp" ofType:@"dat"];
+//        [AliPrivateService initKey:encrptyFilePath];
+        [AliPlayer setEnableLog:YES];
+//        [AliPlayer setLogCallbackInfo:LOG_LEVEL_DEBUG callbackBlock:^(AVPLogLevel logLevel, NSString *strLog) {
+//            NSLog(@"encryptedApp = %@",strLog);
+//
+//        }];
+    });
+    
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
 
     });
     [self UMengInit];
     
+    
+
+
+//    NSString *encrptyFilePath = [[NSBundle mainBundle] pathForResource:@"encryptedApp" ofType:@"dat"];
+//    [AliPrivateService initKey:encrptyFilePath];
+ 
     
     return YES;
 }

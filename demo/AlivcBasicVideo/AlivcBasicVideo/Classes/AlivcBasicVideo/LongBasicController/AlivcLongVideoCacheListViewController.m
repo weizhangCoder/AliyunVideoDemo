@@ -794,7 +794,7 @@
         [AVPTool loadingHudToView:self.view];
         [AlivcPlayVideoRequestManager getWithParameters:@{@"videoId":source.stsSource.vid} urlType:AVPUrlTypePlayerVideoSts success:^(AVPDemoResponseModel *responseObject) {
             [AVPTool hideLoadingHudForView:self.view];
-            source.stsSource = [[AVPVidStsSource alloc] initWithVid:responseObject.data.videoId accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-shanghai"];
+            source.stsSource = [[AVPVidStsSource alloc] initWithVid:responseObject.data.videoId accessKeyId:responseObject.data.accessKeyId accessKeySecret:responseObject.data.accessKeySecret securityToken:responseObject.data.securityToken region:@"cn-beijing"];
             [source.downloader updateWithVid:source.stsSource];
             [source startDownLoad:nil];
         } failure:^(NSString *errorMsg) {
@@ -805,7 +805,7 @@
         [AVPTool loadingHudToView:self.view];
         [AlivcPlayVideoRequestManager getWithParameters:@{@"videoId":source.authSource.vid} urlType:AVPUrlTypePlayerVideoPlayAuth success:^(AVPDemoResponseModel *responseObject) {
             [AVPTool hideLoadingHudForView:self.view];
-            source.authSource = [[AVPVidAuthSource alloc]initWithVid:responseObject.data.videoMeta.videoId playAuth:responseObject.data.playAuth region:@"cn-shanghai"];
+            source.authSource = [[AVPVidAuthSource alloc]initWithVid:responseObject.data.videoMeta.videoId playAuth:responseObject.data.playAuth region:@"cn-beijing"];
             [source.downloader updateWithPlayAuth:source.authSource];
             [source startDownLoad:nil];
         } failure:^(NSString *errorMsg) {
